@@ -25,6 +25,7 @@
 1. Data best practices
     - machine generated vs human generated (eg, Excel spreadsheets)
     - naming conventions: unique identifiers for samples
+        - see "making-the-right-moves-second-edition.pdf" p 149 for examples
     - about spreadsheets
 1. Example: Genomics Core Sequencing data
 1. Example: NCBI SRA Data
