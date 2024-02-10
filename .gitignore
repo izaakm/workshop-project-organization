@@ -1,0 +1,6 @@
+*
+!.gitignore
+!.gitmodules
+!slides/*.md
+!slides/*.yaml
+!slides/*.yml
