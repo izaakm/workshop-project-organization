@@ -2,6 +2,15 @@
 
 # Outline
 
+1. What do you want your project directory to store?
+    - Lab protocols
+    - Primary data, including images 
+    - Lists of specimens and reagents 
+    - Information about instruments
+1. Conceptual model of your project
+    - Where do things go? ... GTD Archive - Use the most obvious "identifier",
+      eg, you should be able to find it by looking in at most 2 places.
+1. README
 1. Project Directory structure
     - data
     - code
@@ -14,11 +23,23 @@
     - derived (outputs)
     - data dictionaries
 1. Data best practices
-    - unique identifiers for samples
+    - machine generated vs human generated (eg, Excel spreadsheets)
+    - naming conventions: unique identifiers for samples
     - about spreadsheets
-1. Example: Sequencing data
+1. Example: Genomics Core Sequencing data
 1. Example: NCBI SRA Data
+1. Example: Something more stats/data-science oriented
 
+# Test diagram
+
+```mermaid
+flowchart LR
+
+A[Hard] -->|Text| B(Round)
+B --> C{Decision}
+C -->|One| D[Result 1]
+C -->|Two| E[Result 2]
+```
 
 
 
