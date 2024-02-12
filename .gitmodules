@@ -1,1 +1,3 @@
-
+[submodule "assets/submodules/custom.css"]
+	path = assets/submodules/custom.css
+	url = https://gist.github.com/izaakm/a16ef801dcd03d46198306d97369bbc3
