@@ -1,6 +1,12 @@
 Project Organization and Data Management
 ========================================
 
+Based on:
+
+- [Project Organization and Management for Genomics][dc_orggen]
+- [Cookiecutter Data Science][cc_ds]
+
+
 Topics
 =======
 
@@ -60,7 +66,7 @@ Attribution
 ===========
 
 Portions of this workshop are derived from the [Data Carpentries'][dc_home]
-workshop "[Project Organization and Management for Genomics][dc_orgg]"
+workshop "[Project Organization and Management for Genomics][dc_orggen]"
 (Copyright (c) The Carpentries) which is made available under the [Creative
 Commons Attribution license 4.0][cc40].
 
@@ -71,9 +77,10 @@ Commons Attribution license 4.0][cc40].
 [cc40]: https://creativecommons.org/licenses/by/4.0/
 [cc40l]: https://creativecommons.org/licenses/by/4.0/legalcode
 [dc_home]: https://datacarpentry.org/
-[dc_orgg]: https://datacarpentry.org/organization-genomics
+[dc_orggen]: https://datacarpentry.org/organization-genomics
 
 []: https://datacarpentry.org/organization-genomics/01-tidiness.html#data-about-the-experiment "Data about the experiment [metadata]"
 []: https://datacarpentry.org/organization-genomics/01-tidiness.html#structuring-data-in-spreadsheets "Structuring data in spreadsheets"
+[cc_ds]: https://drivendata.github.io/cookiecutter-data-science/
 
 <!-- END -->
