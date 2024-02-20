@@ -93,6 +93,14 @@ This is the description of my example project.
     ```
 ```
 
+# Files
+## Environment file(s)
+
+Reproducibility includes your code and all of its dependencies
+
+- environments.yml, requirements.txt
+- Docker, Singularity, Apptainer
+
 
 # Top-level directories
 
@@ -107,10 +115,27 @@ This is the description of my example project.
 # Top-level directories
 ## Data: `data`
 
-- Data is immutable.
+Data is immutable.
+
+- Data is *not* tracked with version control
+- `data/raw` : data came from a machine
+- `data/anthro` : data came from a person ("anthropogenic")
+    - aka `data/third-party`, `data/external`
+- `data/derived` or just `derived` : data was produced by your scripts/pipeline
+    - aka `outputs`, `data/interim`, `data/processed`
 
 # Top-level directories
-## Documentation: `docs`
+## Notebooks: `notebooks`
+
+Notebooks (Jupyter, R markdown) are for exploration and communication
+
+- Extras, nice-to-haves; your analysis shouldn't depend on these.
+- Notebooks are *not* tracked with version control
+- aka `reports`
+
+
+# Top-level directories
+## Documentation: `doc(s)`
 
 - This is where you keep detailed docs that explain this project.
 - Most programming languages have packages for building docs automatically from code.
@@ -124,14 +149,29 @@ This is the description of my example project.
 - Your code/pipeline may save files in this directory, but it should NEVER read
   files from this directory. IE, this is a *terminal* directory with respect to
   your analysis.
+- aka `reports`
 
 # Top-level directories
 ## Code: `src`
 
 - As in your original *source code* (including scripts) for your analysis.
+- aka `scripts`, `R`
 
+# Optional directories
 
+- `cache`, `tmp`: kind of like `derived` but emphasis on short-term storage
+- `config` : for, e.g., NextFlow
+- `lib` : for external code
+- `logs` : for messages from your scripts
+- `test` : test your code
 
+# Exercise
+
+You create a new Excel file (workbook) starting from one of your existing data files. You add a new tab to the workbook and calculate summary statistics.
+
+<!-- Same slide: use H2 to emphasize the question. -->
+
+## How should you handle this Excel file?<br/>Which directory should you put it in?
 
 
 

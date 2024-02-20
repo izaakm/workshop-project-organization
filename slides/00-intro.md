@@ -20,11 +20,64 @@ title: Outline
 1. Exercise: create a project template on github
 1. Cookiecutter
 
-# Guiding Principles
+# Benefits
+
+- Start with a logical structure and then stick to it.
+- A newcomer can begin to understand an analysis without digging in to extensive documentation.
+- A newcomer doesn't have to read 100% of the code to know where to find specific things.
+
+# Benefits
+
+> A good example can be found in major web development frameworks like
+> Django or Ruby on Rails. Nobody sits around before creating a new Rails
+> project to figure out where they want to put their data; they just run `rails
+> new` to get a standard project skeleton like everybody else.
+
+> Another great example is the Filesystem Hierarchy Standard for Unix-like
+> systems. System directories have specific purposes and everybody (more or
+> less) agrees to honor that social contract. That means a user knows roughly
+> where to look for certain types of files, even when using each another
+> person's system.
+
+# Benefits
+
+Ever tried to reproduce an analysis that you did a few months ago or even a few
+years ago?
+
+You wrote the code, but now you can't remember if you should use
+`make_figures_final.py`, `make_figures_working.py` or `new_make_figures.py`.
+
+Here are some questions we've learned to ask with a sense of existential dread:
+
+- Are we supposed to go in and join the column X to the data before we get
+  started or did that come from one of the notebooks?
+- Come to think of it, which notebook do we have to run first before running
+  the plotting code: was it "process data" or "clean data"?
+- Where did the shapefiles get downloaded from for the geographic plots?
+- Et cetera, times infinity.
+
+# Principles
+
+- Start with a flowchart or conceptual model
+    - Start from an example online ...
+
+        <img src="https://astrobiomike.github.io/images/metagenomics_overview.png" style="max-height: 10em; border: 1px solid black;" />
+
+        ... But it doesn't have to be that complicated!
+
+# Principles
 
 - Documentation (README)
-- Git
+- Use version control, eg, Git
+- Be obvious
+- Be explicit
+- Data is immutable
+- Notebooks (Jupyter, R markdown) are for exploration and communication
+- Reproducibility includes your code and all of its dependencies
+
+<!--
 - Machine and human readable
-- Be explicit and be obvious
+-->
+
 
 <!-- END -->
