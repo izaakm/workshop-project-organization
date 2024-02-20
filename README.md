@@ -5,6 +5,7 @@ Based on:
 
 - [Project Organization and Management for Genomics][dc_orggen]
 - [Cookiecutter Data Science][cc_ds]
+- [A Quick Guide to Organizing Computational Biology Projects][quick_compbio]
 
 
 Topics
@@ -82,5 +83,7 @@ Commons Attribution license 4.0][cc40].
 []: https://datacarpentry.org/organization-genomics/01-tidiness.html#data-about-the-experiment "Data about the experiment [metadata]"
 []: https://datacarpentry.org/organization-genomics/01-tidiness.html#structuring-data-in-spreadsheets "Structuring data in spreadsheets"
 [cc_ds]: https://drivendata.github.io/cookiecutter-data-science/
+[]: https://sciencehistory.org/education/scientific-biographies/james-watson-francis-crick-maurice-wilkins-and-rosalind-franklin/
+[quick_compbio]: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424
 
 <!-- END -->
