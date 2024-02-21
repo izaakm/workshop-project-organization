@@ -58,6 +58,33 @@ Here are some questions we've learned to ask with a sense of existential dread:
 
 # Principles
 
+> The core guiding principle is simple: Someone unfamiliar with your project
+> should be able to look at your computer files and understand in detail what
+> you did and why. (Noble, 2009)
+
+# Principles
+
+> This “someone” could be any of a variety of people:
+
+- > someone who read your published article and wants to try to reproduce your work
+- > a collaborator who wants to understand the details of your experiments
+- > a future student working in your lab who wants to extend your work after you have moved on to a new job
+- > your research advisor, who may be interested in understanding your work or who may be evaluating your research skills.
+
+(Noble, 2009)
+
+
+# Principles
+
+> This “someone” could be any of a variety of people:
+
+- > **Most commonly, however, that “someone” is you.** A few months from now, you may not remember what you were up to when you created a particular set of files, or you may not remember what conclusions you drew. You will either have to then spend time reconstructing your previous experiments or lose whatever insights you gained from those experiments.
+
+(Noble, 2009)
+
+
+# Principles
+
 - Start with a flowchart or conceptual model
     - Start from an example online ...
 
