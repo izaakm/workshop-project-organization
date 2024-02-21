@@ -1,6 +1,24 @@
 Project Organization and Data Management
 ========================================
 
+> Unfortunately, for students who are preparing for a research career, [the
+> typical bioinformatics and computational biology] curriculum fails to address
+> many of the **day-to-day organizational challenges** associated with
+> performing computational experiments. In practice, the principles behind
+> organizing and documenting computational experiments are often learned on the
+> fly, and this learning is strongly influenced by personal predilections as
+> well as by chance interactions with collaborators or colleagues.
+>
+> The purpose of [this workshop!] is to describe one good strategy for carrying
+> out computational experiments. I will not describe profound issues such as
+> how to formulate hypotheses, design experiments, or draw conclusions. Rather,
+> I will focus on relatively mundane issues such as organizing files and
+> directories and documenting progress. These issues are important because
+> **poor organizational choices can lead to significantly slower research
+> progress.** I do not claim that the strategies I outline here are optimal.
+> (Noble, 2009)
+
+
 Based on:
 
 - [Project Organization and Management for Genomics][_d]
@@ -70,6 +88,11 @@ Portions of this workshop are derived from the [Data Carpentries'][_c]
 workshop "[Project Organization and Management for Genomics][_d]"
 (Copyright (c) The Carpentries) which is made available under the [Creative
 Commons Attribution license 4.0][_a].
+
+References
+==========
+
+1. Noble WS (2009) A Quick Guide to Organizing Computational Biology Projects. PLOS Computational Biology 5(7): e1000424. https://doi.org/10.1371/journal.pcbi.1000424
 
 
 
