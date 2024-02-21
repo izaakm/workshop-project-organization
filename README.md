@@ -79,17 +79,13 @@ Commons Attribution license 4.0][_a].
 [_b]: https://creativecommons.org/licenses/by/4.0/legalcode
 [_c]: https://datacarpentry.org/
 [_d]: https://datacarpentry.org/organization-genomics
-[_e]:
-    https://datacarpentry.org/organization-genomics/01-tidiness.html#data-about-the-experiment
+[_e]: https://datacarpentry.org/organization-genomics/01-tidiness.html#data-about-the-experiment
     "Data about the experiment [metadata]"
-[_f]:
-    https://datacarpentry.org/organization-genomics/01-tidiness.html#structuring-data-in-spreadsheets
+[_f]: https://datacarpentry.org/organization-genomics/01-tidiness.html#structuring-data-in-spreadsheets
     "Structuring data in spreadsheets"
 [_g]: https://drivendata.github.io/cookiecutter-data-science/
-[_h]:
-    https://sciencehistory.org/education/scientific-biographies/james-watson-francis-crick-maurice-wilkins-and-rosalind-franklin/
-[_i]:
-    https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424
+[_h]: https://sciencehistory.org/education/scientific-biographies/james-watson-francis-crick-maurice-wilkins-and-rosalind-franklin/
+[_i]: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424
     "A Quick Guide to Organizing Computational Biology Projects"
 
 <!-- END -->
