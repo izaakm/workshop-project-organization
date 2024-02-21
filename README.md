@@ -3,9 +3,9 @@ Project Organization and Data Management
 
 Based on:
 
-- [Project Organization and Management for Genomics][dc_orggen]
-- [Cookiecutter Data Science][cc_ds]
-- [A Quick Guide to Organizing Computational Biology Projects][quick_compbio]
+- [Project Organization and Management for Genomics][_d]
+- [Cookiecutter Data Science][_g]
+- [A Quick Guide to Organizing Computational Biology Projects][_i]
 
 
 Topics
@@ -66,24 +66,30 @@ C -->|Two| E[Result 2]
 Attribution
 ===========
 
-Portions of this workshop are derived from the [Data Carpentries'][dc_home]
-workshop "[Project Organization and Management for Genomics][dc_orggen]"
+Portions of this workshop are derived from the [Data Carpentries'][_c]
+workshop "[Project Organization and Management for Genomics][_d]"
 (Copyright (c) The Carpentries) which is made available under the [Creative
-Commons Attribution license 4.0][cc40].
+Commons Attribution license 4.0][_a].
 
 
 
 <!-- LINKS -->
 
-[cc40]: https://creativecommons.org/licenses/by/4.0/
-[cc40l]: https://creativecommons.org/licenses/by/4.0/legalcode
-[dc_home]: https://datacarpentry.org/
-[dc_orggen]: https://datacarpentry.org/organization-genomics
-
-[]: https://datacarpentry.org/organization-genomics/01-tidiness.html#data-about-the-experiment "Data about the experiment [metadata]"
-[]: https://datacarpentry.org/organization-genomics/01-tidiness.html#structuring-data-in-spreadsheets "Structuring data in spreadsheets"
-[cc_ds]: https://drivendata.github.io/cookiecutter-data-science/
-[]: https://sciencehistory.org/education/scientific-biographies/james-watson-francis-crick-maurice-wilkins-and-rosalind-franklin/
-[quick_compbio]: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424
+[_a]: https://creativecommons.org/licenses/by/4.0/
+[_b]: https://creativecommons.org/licenses/by/4.0/legalcode
+[_c]: https://datacarpentry.org/
+[_d]: https://datacarpentry.org/organization-genomics
+[_e]:
+    https://datacarpentry.org/organization-genomics/01-tidiness.html#data-about-the-experiment
+    "Data about the experiment [metadata]"
+[_f]:
+    https://datacarpentry.org/organization-genomics/01-tidiness.html#structuring-data-in-spreadsheets
+    "Structuring data in spreadsheets"
+[_g]: https://drivendata.github.io/cookiecutter-data-science/
+[_h]:
+    https://sciencehistory.org/education/scientific-biographies/james-watson-francis-crick-maurice-wilkins-and-rosalind-franklin/
+[_i]:
+    https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424
+    "A Quick Guide to Organizing Computational Biology Projects"
 
 <!-- END -->
