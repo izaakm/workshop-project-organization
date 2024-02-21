@@ -109,6 +109,10 @@ References
 [_g]: https://drivendata.github.io/cookiecutter-data-science/
 [_h]: https://sciencehistory.org/education/scientific-biographies/james-watson-francis-crick-maurice-wilkins-and-rosalind-franklin/
 [_i]: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424
-    "A Quick Guide to Organizing Computational Biology Projects"
+    "A Quick Guide to Organizing Computational Biology Projects (Noble, 2009)"
+[_k]: https://github.com/chendaniely/computational-project-cookie-cutter
+    "A cookie cutter to set up a folder structure for a computational project (not affiliated with Cookiecutter software)"
+[_l]: https://github.com/Reproducible-Science-Curriculum/rr-init
+    "Research project initialization and organization following reproducible research guidelines"
 
 <!-- END -->
