@@ -114,5 +114,7 @@ References
     "A cookie cutter to set up a folder structure for a computational project (not affiliated with Cookiecutter software)"
 [_l]: https://github.com/Reproducible-Science-Curriculum/rr-init
     "Research project initialization and organization following reproducible research guidelines"
+[65db5d28]: https://google.github.io/styleguide/docguide/style.html
+    "Markdown style guide | styleguide"
 
 <!-- END -->
