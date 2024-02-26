@@ -8,7 +8,6 @@ title: Example Project
 ```
 example
 ├── AUTHORS
-├── CITATION.cff
 ├── README.md
 ├── data
 │   ├── anthropogenic
@@ -22,9 +21,8 @@ example
 # Files
 
 ```
-example
+...
 ├── AUTHORS
-├── CITATION.cff
 ├── README.md
 ...
 ```
@@ -41,31 +39,6 @@ Crick, Francis
 Franklin, Rosalind
 Watson, James
 Wilkins, Maurice
-```
-
-# Files
-## Citation file (including authors)
-
-```
-$ cat CITATION.cff
-```
-
-```text
-cff-version: 1.2.0
-message: "If you use this software, please cite it as below."
-authors:
-  - family-names: Crick
-    given-names: James
-    orcid: https://orcid.org/0000-0000-0000-0001
-  - family-names: Franklin
-    given-names: Rosalind
-    orcid: https://orcid.org/0000-0000-0000-0002
-title: "Example Project"
-version: 2.0.4
-identifiers:
-  - type: doi
-    value: 10.5281/zenodo.1234
-date-released: 2021-08-11
 ```
 
 # Files
@@ -91,6 +64,31 @@ This is the description of my example project.
     $ cd example-project
     $ pip install .
     ```
+```
+
+# Files
+## Citation File Format (CFF)
+
+```
+$ cat CITATION.cff
+```
+
+```text
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Crick
+    given-names: James
+    orcid: https://orcid.org/0000-0000-0000-0001
+  - family-names: Franklin
+    given-names: Rosalind
+    orcid: https://orcid.org/0000-0000-0000-0002
+title: "Example Project"
+version: 2.0.4
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.1234
+date-released: 2021-08-11
 ```
 
 # Files
