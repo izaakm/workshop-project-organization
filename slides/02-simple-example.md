@@ -14,6 +14,7 @@ example
 │   ├── derived
 │   └── raw
 ├── docs
+├── notebooks
 ├── results
 └── src
 ```
@@ -66,46 +67,13 @@ This is the description of my example project.
     ```
 ```
 
-# Files
-## Citation File Format (CFF)
-
-```
-$ cat CITATION.cff
-```
-
-```text
-cff-version: 1.2.0
-message: "If you use this software, please cite it as below."
-authors:
-  - family-names: Crick
-    given-names: James
-    orcid: https://orcid.org/0000-0000-0000-0001
-  - family-names: Franklin
-    given-names: Rosalind
-    orcid: https://orcid.org/0000-0000-0000-0002
-title: "Example Project"
-version: 2.0.4
-identifiers:
-  - type: doi
-    value: 10.5281/zenodo.1234
-date-released: 2021-08-11
-```
-
-# Files
-## Environment file(s)
-
-Reproducibility includes your code and all of its dependencies
-
-- environments.yml, requirements.txt
-- Docker, Singularity, Apptainer
-
-
 # Top-level directories
 
 ```
 ...
 ├── data
 ├── docs
+├── notebooks
 ├── results
 └── src
 ```
@@ -124,12 +92,21 @@ Data is immutable.
     - subdirectories might be, eg, `data/derived/counts`, etc.
 
 # Top-level directories
-## Notebooks: `notebooks`
+## Documentation: `doc(s)` or `documentation`
 
 > ... to make the results more understandable, significant effort may need to
 > go into the prose descriptions of experiments in the lab notebook, rather
 > than simply including a figure or table with a few lines of text summarizing
 > the major conclusion. (Noble, 2009)
+
+# Top-level directories
+## Documentation: `doc(s)` or `documentation`
+
+- This is where you keep detailed docs that explain this project.
+- Most programming languages have packages for building docs automatically from
+  code.
+- Maybe unnecessary depending on the scale of the projet. E.g., all
+  documentation might reasonably fit into the main `README`.
 
 # Top-level directories
 ## Notebooks: `notebooks`
@@ -141,15 +118,6 @@ Notebooks (Jupyter, R markdown) are for exploration and communication.
 - aka `reports`
 
 <!-- [TODO] Does it make sense to think of this as a 'lab notebook'? -->
-
-# Top-level directories
-## Documentation: `doc(s)`
-
-- This is where you keep detailed docs that explain this project.
-- Most programming languages have packages for building docs automatically from
-  code.
-- Maybe unnecessary depending on the scale of the projet. E.g., all
-  documentation might reasonably fit into the main `README`.
 
 # Top-level directories
 ## Results: `results`
@@ -168,18 +136,6 @@ Notebooks (Jupyter, R markdown) are for exploration and communication.
 - As in your original *source code* (including scripts) for your analysis.
 - This is *human readable* code (ie, not compiled).
 - aka `scripts`, `R`
-
-# Optional directories
-
-- `cache`, `tmp`: kind of like `derived` but emphasis on short-term storage
-- `config` : for, e.g., NextFlow
-- `lib` : for external code
-- `logs` : for messages from your scripts
-- `test` : test your code
-- `bin` : binaries and scripts\*
-    <div class="footnote">
-    \* Scripts that are *not* compiled should be in `src` and then be symlinked into `bin`.
-    </div>
 
 # Exercise
 
@@ -204,11 +160,11 @@ You create a new Excel file (workbook) starting from one of your existing data f
 # Naming files and directories
 ## Logical naming
 
+*Keep it simple (and obvious).*
+
 - `sequences`
 - `counts` or `read-counts`
 - `survey-responses`
-
-***Be obvious.***
 
 # Naming files and directories
 ## Sequential naming
@@ -218,50 +174,6 @@ You create a new Excel file (workbook) starting from one of your existing data f
 - alphanumeric: `001`, `a`
 
 Optionally include a brief (1-3 words) description as a suffix.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <!-- END -->
