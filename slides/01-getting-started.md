@@ -22,20 +22,6 @@ title: Getting Started
 # Conceptual model
 
 
-```{.mermaid #fig:start-stop}
-%%| caption: "Start Stop"
-%%| alt: "A flow chart representing the Start Stop workflow"
-%%| name: "start-stop"
-%%{init: {'theme': 'forest', "flowchart" : { "curve" : "basis" } } }%%
-
-flowchart TD
-    Start --> Stop
-```
-
-
-# Conceptual model
-
-
 ```mermaid
 %%| caption: "Start Stop"
 %%| alt: "A flow chart representing the Start Stop workflow"
@@ -46,6 +32,13 @@ flowchart TD
     Start --> Stop
 ```
 
+# Exercise
+## Draw a conceptual model
+
+- What are your data sources?
+- What are the 'preprocessing' steps?
+- What are the main software programs you anticipate using?
+- Does your project require complex custom code?
 
 
 <!-- END -->

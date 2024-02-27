@@ -49,9 +49,6 @@ example
 └── src
 ```
 
-<https://citation-file-format.github.io/cff-initializer-javascript/#/>
-
-
 # Files
 ## Citation File Format (CFF)
 
@@ -88,6 +85,32 @@ date-released: 2021-08-11
 
 
 # Files
+## Add a DOI w/ Zenodo
+
+```
+$ cat CITATION.cff
+```
+
+```text
+...
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.1234  *
+...
+```
+
+<https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content>
+
+# Exercise
+## Create a CITATION.cff file
+
+<!--
+<https://citation-file-format.github.io/cff-initializer-javascript/#/>
+-->
+
+<https://bit.ly/cffinit>
+
+# Files
 ## Environment file(s)
 
 Reproducibility includes your code *and all of its dependencies*.
@@ -114,21 +137,15 @@ example
 
 # Optional directories
 
-- `cache`, `tmp` : kind of like `derived` but emphasis on short-term storage
-- `config`       : for, e.g., NextFlow
-- `lib`          : for external code
-- `logs`         : for messages from your scripts
-- `test`         : test your code
 - `bin`          : binaries and scripts\*
     <div class="footnote">
     \* Scripts that are *not* compiled should be in `src` and then be symlinked into `bin`.
     </div>
-
-
-# Exercise
-## Create a CITATION.cff file
-
-<https://citation-file-format.github.io/cff-initializer-javascript/#/>
+- `config`       : configuration files with settings e.g., for NextFlow
+- `lib`          : for external code
+- `logs`         : for messages from your scripts
+- `tests`        : tests your code
+- `tmp`, `cache` : kind of like `derived` but emphasis on *temporary* storage
 
 
 
