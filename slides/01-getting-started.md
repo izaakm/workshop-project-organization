@@ -8,7 +8,8 @@ title: Getting Started
 
 <!-- THIS SLIDE BLANK -->
 
-# What do you need to track?
+# Getting Started
+## What do you need to track?
 
 - Data (raw, processed, etc)
 - Scripts
@@ -19,8 +20,41 @@ title: Getting Started
 - ...
 
 
-# Conceptual model
+# Getting Started
 
+Start with a flowchart or conceptual model
+
+- Start from an example online ...
+
+    <img src="https://astrobiomike.github.io/images/metagenomics_overview.png" style="max-height: 10em; border: 1px solid black;" />
+
+    ... But it doesn't have to be that complicated!
+
+# Getting Started
+## Principles
+
+- Data is immutable
+- Documentation (README)
+- Use version control, eg, Git
+- Be obvious
+- Be explicit
+- Notebooks (Jupyter, R markdown) are for exploration and communication
+- Reproducibility includes your code and all of its dependencies
+
+<!--
+- Machine and human readable
+-->
+
+# Exercise
+## Draw your conceptual model
+
+- What are your data sources?
+- What are the 'preprocessing' steps?
+- What are the main software programs you anticipate using?
+- Does your project require complex custom code?
+
+# Exercise
+## Conceptual model -- Example
 
 ```mermaid
 %%| caption: "Start Stop"
@@ -31,14 +65,6 @@ title: Getting Started
 flowchart TD
     Start --> Stop
 ```
-
-# Exercise
-## Draw a conceptual model
-
-- What are your data sources?
-- What are the 'preprocessing' steps?
-- What are the main software programs you anticipate using?
-- Does your project require complex custom code?
 
 
 <!-- END -->

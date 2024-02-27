@@ -2,6 +2,9 @@
 title: Example Project
 ---
 
+# Project structure
+
+<!-- blank slide -->
 
 # A minimal example
 
@@ -10,9 +13,6 @@ example
 ├── AUTHORS
 ├── README.md
 ├── data
-│   ├── anthropogenic
-│   ├── derived
-│   └── raw
 ├── docs
 ├── notebooks
 ├── results
@@ -53,18 +53,6 @@ $ cat README.md
 # Example Project
 
 This is the description of my example project.
-
-## Setup/Installation
-
-1. Clone this repo:
-    ```
-    $ git clone https://github.com/GITHUB_USERNAME/example-project.git
-    ```
-2. Then `cd` and `pip install`:
-    ```
-    $ cd example-project
-    $ pip install .
-    ```
 ```
 
 # Top-level directories
@@ -81,18 +69,13 @@ This is the description of my example project.
 # Top-level directories
 ## Data: `data`
 
-Data is immutable.
-
+- Data is immutable.
 - Data is *not* tracked with version control
-- `data/raw` : data came from a machine
-- `data/anthro` : data came from a person ("anthropogenic")
-    - aka `data/third-party`, `data/external`
-- `data/derived` or just `derived` : data was produced by your scripts/pipeline
-    - aka `outputs`, `data/interim`, `data/processed`
-    - subdirectories might be, eg, `data/derived/counts`, etc.
 
 # Top-level directories
 ## Documentation: `doc(s)` or `documentation`
+
+Your lab notebook
 
 > ... to make the results more understandable, significant effort may need to
 > go into the prose descriptions of experiments in the lab notebook, rather
@@ -101,6 +84,8 @@ Data is immutable.
 
 # Top-level directories
 ## Documentation: `doc(s)` or `documentation`
+
+Your lab notebook
 
 - This is where you keep detailed docs that explain this project.
 - Most programming languages have packages for building docs automatically from
@@ -137,13 +122,44 @@ Notebooks (Jupyter, R markdown) are for exploration and communication.
 - This is *human readable* code (ie, not compiled).
 - aka `scripts`, `R`
 
+# Sub-directories
+
+- Data is immutable.
+- Data is *not* tracked with version control
+
+```
+data/
+├── anthro
+├── derived
+└── raw
+```
+
+<!--
+- `data/raw` : data came from a machine
+- `data/anthro` : data came from a person ("anthropogenic")
+    - aka `data/third-party`, `data/external`
+- `data/derived` or just `derived` : data was produced by your scripts/pipeline
+    - aka `outputs`, `data/interim`, `data/processed`
+    - subdirectories might be, eg, `data/derived/counts`, etc.
+-->
+
+# Sub-directories
+
+| Sub-directory | aka                               | Where it came from              |
+| :-            | :-                                | :---                            |
+| `raw`         |                                   | from a machine                  |
+| `derived`     | `outputs`, `interim`, `processed` | from your scripts/pipeline      |
+| `anthro`      | `third-party`, `external`         | from a person ("anthropogenic") |
+
 # Exercise
 
-You create a new Excel file (workbook) starting from one of your existing data files. You add a new tab to the workbook and calculate summary statistics.
+You receive an Excel file via email from a collaborator.
+You want to generate summary statistics for the data in this file.
 
-<!-- Same slide: use H2 to emphasize the question. -->
+How should you handle this Excel file?
 
-## How should you handle this Excel file?<br/>Which directory should you put it in?
+1. Which directory should you put it in?
+1. How do you generate summary statistics?
 
 
 # Naming files and directories

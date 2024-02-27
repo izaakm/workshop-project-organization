@@ -1,12 +1,41 @@
 ---
-title: Markdown
+title: README Files
 ---
 
-# Markdown
+# README Files
 
+<!-- blank slide -->
 
-# Markdown
-## Why?
+# README.md
+## Markdown
+
+```
+$ cat README.md
+```
+
+```text
+# Example Project
+
+This is the description of my example project.
+
+## Setup/Installation
+
+1. Clone this repo:
+    ```
+    $ git clone https://github.com/GITHUB_USERNAME/example-project.git
+    ```
+2. Then `cd` and `pip install`:
+    ```
+    $ cd example-project
+    $ pip install .
+    ```
+```
+
+# What *is* Markdown?
+
+Simple, text-based formatting instructions (**markup**).
+
+# Why use Markdown?
 
 <table>
 <tr>
@@ -19,11 +48,10 @@ TODO: screenshot repo after
 </tr>
 </table>
 
-# What is Markdown?
+# Why use Markdown
 
-Simple, text-based formatting instructions (**markup**).
-
-Easy to read in **plain-text** (e.g., in the terminal).
+- Easy to read in **plain-text** (e.g., in the terminal).
+- Nice to read online ... and more (these slides are written in Markdown).
 
 
 # Headings
