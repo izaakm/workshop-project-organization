@@ -1,0 +1,13 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Project Organization & Data Management
+authors:
+  - given-names: John
+    family-names: Miller
+    affiliation: 'University of Tennessee, Knoxville'
+    orcid: 'https://orcid.org/0000-0002-6114-5401'
+repository-code: 'https://github.com/izaakm/workshop-project-organization'
+license: CC-BY-1.0
+date-released: '2024-03-01'
