@@ -8,6 +8,26 @@ title: Outline
 
 <!-- blank -->
 
+
+# Plugs
+
+- Office Hours (Tue, 11-12 Zoom and Thu, 1-2 in Min Kao 639)
+- UT Bioinformatics Monthly Newsletter<br/>
+  <https://tiny.utk.edu/BioinformaticsNewsletter>
+- Bioinformatics Computing Support<br/>
+  <https://tiny.utk.edu/BCS>
+
+# <!-- SLIDE: FLYER -->
+
+<img src="images/workshop-flyer/flyer-150dpi.jpg" style="border: 1px solid grey" />
+
+<!--
+![][img-workshop-flyer]
+-->
+
+[img-workshop-flyer]: images/workshop-flyer/flyer-150dpi.jpg
+
+
 # Motivation
 
 <div style="font-size: 0.8em;">

@@ -1,11 +1,19 @@
 ---
-title: Cookiecutter
+title: Extras
 ---
 
+# Extras
 
-# Cookiecutter
+<!-- blank slide -->
 
-<https://www.cookiecutter.io/>
+# Extras
+
+- Upload your project repo to GitHub
+    <https://github.com/>
+- Checkout Cookiecutter templates
+    <https://www.cookiecutter.io/>
+- Add a DOI with Zenodo
+    <https://zenodo.org/>
 
 
 <!--

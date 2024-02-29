@@ -14,7 +14,16 @@ title: Exercise -- Create a "make project" script
 # Exercise 
 ## Create a "make project" script
 
-<!-- this slide blank -->
+The goal:
+
+```
+$ mkprj future-nature-pub
+```
+
+1. Create directory "future-nature-pub".
+1. Create your standard set of directories.
+1. Create your standard set of files, e.g., README, AUTHORS.
+1. Initialize the directory as a Git repository with your standard files (and directories).
 
 # Exercise 
 ## Create a "make project" script
