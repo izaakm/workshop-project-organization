@@ -53,6 +53,7 @@ Start with a flowchart or conceptual model
 - What are the main software programs you anticipate using?
 - Does your project require complex custom code?
 
+<!--
 # Exercise
 ## Conceptual model -- Example
 
@@ -63,8 +64,19 @@ Start with a flowchart or conceptual model
 %%{init: {'theme': 'forest', "flowchart" : { "curve" : "basis" } } }%%
 
 flowchart TD
-    Start --> Stop
+    Start - -> Stop
 ```
+-->
+
+# Exercise
+## Conceptual model -- Example
 
 
+<img src="images/example-workflow.png" />
+
+<!--
+https://hbctraining.github.io/rnaseq-cb321/lessons/analysis_methods.html
+-->
+
+# *Let's get started ...*
 <!-- END -->

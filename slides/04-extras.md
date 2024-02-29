@@ -10,9 +10,6 @@ example
 ├── AUTHORS
 ├── README.md
 ├── data
-│   ├── anthropogenic
-│   ├── derived
-│   └── raw
 ├── docs
 ├── results
 └── src
@@ -38,12 +35,9 @@ Wilkins, Maurice
 
 ```text
 example
-├── CITATION.cff
+├── CITATION.cff  *
 ├── README.md
 ├── data
-│   ├── anthropogenic
-│   ├── derived
-│   └── raw
 ├── docs
 ├── results
 └── src
@@ -70,8 +64,8 @@ title: "Example Project"
 version: 2.0.4
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.1234
-date-released: 2021-08-11
+    value: 10.1038/171737a0
+date-released: 1953-04-25
 ```
 
 # Files
@@ -108,7 +102,7 @@ identifiers:
 <https://citation-file-format.github.io/cff-initializer-javascript/#/>
 -->
 
-<https://bit.ly/cffinit>
+1. Go to <https://bit.ly/cffinit> and create a CITATION.cff file for your project.
 
 # Files
 ## Environment file(s)
@@ -124,11 +118,8 @@ Reproducibility includes your code *and all of its dependencies*.
 example
 ├── CITATION.cff
 ├── README.md
-├── environment.yml
+├── environment.yml    *
 ├── data
-│   ├── anthropogenic
-│   ├── derived
-│   └── raw
 ├── docs
 ├── results
 └── src
@@ -144,8 +135,8 @@ example
 - `config`       : configuration files with settings e.g., for NextFlow
 - `lib`          : for external code
 - `logs`         : for messages from your scripts
-- `tests`        : tests your code
-- `tmp`, `cache` : kind of like `derived` but emphasis on *temporary* storage
+- `tests`        : scripts to run tests on your code
+- `tmp`, `cache` : temporary data directory to use during development
 
 
 

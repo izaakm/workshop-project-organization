@@ -1,17 +1,45 @@
 ---
-title: Exercise -- Create a "new project" script
+title: Exercise -- Create a "make project" script
 ---
 
+# What next ... ?
+
+> ... any additional overhead means that something just won't get done. So if
+> setting up a project isn't almost as simple as just making a new directory,
+> then a lot of users will simply make new blank project directories and fill
+> them up with minimal consideration to structure like they've been doing even
+> though they know it leads to headaches.
+
+
 # Exercise 
-## Create a "new project" script
+## Create a "make project" script
 
 <!-- this slide blank -->
 
-# Exercise
+# Exercise 
+## Create a "make project" script
+
+```
+$ cd /lustre/isaac/scratch/USERNAME
+$ mkdir -p src/make-project
+$ cd src/make-project
+$ nano make-project.sh
+```
+
+Add the following text to your script:
 
 ```text
 #!/usr/bin/env bash
 ```
+
+# Exercise
+
+*Don't forget to save your changes!*
+
+In Nano:
+
+- Press <kbd>Control</kbd><kbd>o</kbd> to "write out" the file.
+- Then press <kbd>Enter</kbd> to confirm.
 
 # Exercise
 
@@ -42,7 +70,7 @@ fi
 
 ```text
 # The first argument passed into the script should be the name of the directory
-# where you want your new project setup.
+# where you want your new project directory created.
 project_dir="$1"
 
 echo "Setting up folder structure in ${project_dir}"
@@ -190,11 +218,62 @@ git commit -m "Initialize new project repository"
 ```
 
 # Exercise
-## Exit the script explicitely
+## Tell the script to exit cleanly
 
 ```text
 # All done!
 exit 0
 ```
+
+Your script should return the exit code `0` when it completes without errors.
+
+# Exercise
+## Save and quit
+
+Save your file by pressing <kbd>Control</kbd><kbd>o</kbd>.<br/>
+Then exit Nano by pressing <kbd>Control</kbd><kbd>x</kbd>.
+
+# Exercise
+## Test your script
+
+```
+$ ls
+make-project.sh
+$ bash ./make-project.sh /lustre/isaac/scratch/projects/foo
+$ ls -R /lustre/isaac/scratch/projects/foo
+```
+
+# Exercise
+## Install your script for easy use
+
+```
+$ ls
+make-project.sh
+$ pwd
+/lustre/isaac/scratch/USERNAME/src/make-project
+$ cd
+$ mkdir bin
+$ cd bin
+$ ln -s /lustre/isaac/scratch/USERNAME/src/make-project/make-project.sh .
+$ ls -l
+lrwxrwxrwx 1 USERNAME GROUP 63 Feb 29 09:53 make-project.sh -> /lustre/isaac/scratch/USERNAME/src/make-project/make-project.sh
+```
+
+# Exercise
+## Install your script for easy use
+
+```
+$ cd
+$ nano .bashrc
+```
+
+Add the following text at the end of the file:
+
+```text
+alias mkprj="bash ~/bin/make-project.sh"
+```
+
+Then exit nano with <kbd>Control</kbd><kbd>o</kbd>, <kbd>Control</kbd><kbd>x</kbd>
+
 
 <!-- END -->

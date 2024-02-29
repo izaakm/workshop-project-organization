@@ -55,6 +55,13 @@ $ cat README.md
 This is the description of my example project.
 ```
 
+# Exercise
+
+1. Create a new directory for your project
+1. Create a `README.md` file with the working title and brief description of your project
+1. Create an `AUTHORS` file and list the authors for the project
+1. Optional: Initialize your project directory as a Git repository
+
 # Top-level directories
 
 ```
@@ -67,13 +74,13 @@ This is the description of my example project.
 ```
 
 # Top-level directories
-## Data: `data`
+## `data`
 
 - Data is immutable.
 - Data is *not* tracked with version control
 
 # Top-level directories
-## Documentation: `doc(s)` or `documentation`
+## `docs`
 
 Your lab notebook
 
@@ -83,18 +90,19 @@ Your lab notebook
 > the major conclusion. (Noble, 2009)
 
 # Top-level directories
-## Documentation: `doc(s)` or `documentation`
+## `docs`
 
 Your lab notebook
 
-- This is where you keep detailed docs that explain this project.
+- Detailed documentation that explain this project.
 - Most programming languages have packages for building docs automatically from
   code.
-- Maybe unnecessary depending on the scale of the projet. E.g., all
-  documentation might reasonably fit into the main `README`.
+- For small projects, all documentation might reasonably fit into the main
+  `README` file.
+- aka: `doc`, `documentation`
 
 # Top-level directories
-## Notebooks: `notebooks`
+## `notebooks`
 
 Notebooks (Jupyter, R markdown) are for exploration and communication.
 
@@ -105,7 +113,7 @@ Notebooks (Jupyter, R markdown) are for exploration and communication.
 <!-- [TODO] Does it make sense to think of this as a 'lab notebook'? -->
 
 # Top-level directories
-## Results: `results`
+## `results`
 
 - As in the *results* section of your manuscript.
 - Tables, plots, figures, etc. that you intend to use in your manuscript and
@@ -116,13 +124,29 @@ Notebooks (Jupyter, R markdown) are for exploration and communication.
 - aka `reports`
 
 # Top-level directories
-## Code: `src`
+## `src`
 
 - As in your original *source code* (including scripts) for your analysis.
 - This is *human readable* code (ie, not compiled).
 - aka `scripts`, `R`
 
-# Sub-directories
+# Exercise
+
+1. Create the top-level directories for your project, e.g.:
+
+    ```
+    ...
+    ├── data
+    ├── docs
+    ├── notebooks
+    ├── results
+    └── src
+    ```
+
+1. Add a description of each directory to your README file.
+
+
+# Data Sub-directories
 
 - Data is immutable.
 - Data is *not* tracked with version control
@@ -143,13 +167,124 @@ data/
     - subdirectories might be, eg, `data/derived/counts`, etc.
 -->
 
-# Sub-directories
+# Data Sub-directories
 
 | Sub-directory | aka                               | Where it came from              |
 | :-            | :-                                | :---                            |
 | `raw`         |                                   | from a machine                  |
 | `derived`     | `outputs`, `interim`, `processed` | from your scripts/pipeline      |
 | `anthro`      | `third-party`, `external`         | from a person ("anthropogenic") |
+
+
+# Data (Sub)Sub-directories
+
+Logical naming examples:
+
+- `raw/sequences`, `raw/IlluminaNovaSeq`, `raw/survey-responses`
+- `derived/counts`, `derived/read-counts`
+- `anthro/milleri`
+
+<!--
+*Keep it simple (and obvious).*
+-->
+
+> *There should be one--and preferably only one--obvious <!--way to do it--> place to find it.*
+> 
+> \~ Adapted from *The Zen of Python*
+
+
+# Data (Sub)Sub-directories
+
+> the logical structure of your final set of experiments may look drastically
+> different from the form you initially designed. This is particularly true
+> under the results directory, where you may not even know in advance what
+> kinds of experiments you will need to perform. <mark>If you try to give your
+> directories logical names, you may end up with a very long list of
+> directories with names that, six months from now, you no longer know how to
+> interpret.</mark> (Noble, 2009)
+
+# Data (Sub)Sub-directories
+
+Sequential naming
+
+- alpha/numeric: `01`, `010`, `a`
+- datetime: `YYYY-MM-DD`, `YYYY-MM-DD-HHMMSS`
+- Unix timestamp: `1234567890`
+
+# Data (Sub)Sub-directories
+
+Sequential naming
+
+alpha/numeric: `01`, `010`, `a`
+
+- `pipeline/001`<br/>
+  `pipeline/002`
+
+Optionally include a brief (1-3 words) description as a suffix
+
+- `pipeline/001-fastqc`<br/>
+  `pipeline/002-multiqc`
+
+# Data (Sub)Sub-directories
+
+Sequential naming
+
+datetime: `YYYY-MM-DD`, `YYYY-MM-DD-HHMMSS`
+
+- `raw/survey-responses/2024-03-01`
+- `anthro/milleri/2024-03-01`
+
+# Data (Sub)Sub-directories
+
+Sequential naming
+
+Unix timestamp: `1234567890`
+
+- `pipeline/1709214775`<br/>
+  `pipeline/1709214779`
+- `tmp/differential-expression/1709214775`<br/>
+  `tmp/differential-expression/1709214779`
+
+# Adding 'empty' directories to a Git repo
+
+Git only tracks *files*. A common convention is to create empty files named
+`.gitkeep` in standard directories.
+
+# Exercise
+
+1. Create subdirectories for your data based on your conceptual model.
+1. Optional: Add these directories to your Git repository.
+
+<!--
+1. Create placeholder scripts for your analysis pipeline.
+-->
+
+<!--
+.
+├── data
+│   ├── derived
+│   │   ├── counts
+│   │   ├── deseq2
+│   │   └── qc
+│   └── raw
+│       └── reads
+│           ├── Sample00_R1.fastq.gz
+│           ├── Sample00_R2.fastq.gz
+│           ├── Sample01_R1.fastq.gz
+│           ├── Sample01_R2.fastq.gz
+│           ├── Sample02_R1.fastq.gz
+│           ├── Sample02_R2.fastq.gz
+│           ├── Sample03_R1.fastq.gz
+│           └── Sample03_R2.fastq.gz
+└── src
+    ├── 010-qc.sh
+    ├── 020-quant.sh
+    ├── 030-qc.sh
+    ├── 040-diff-expr.R
+    ├── 050-make-plots.R
+    └── runall.sh
+-->
+
 
 # Exercise
 
@@ -160,36 +295,5 @@ How should you handle this Excel file?
 
 1. Which directory should you put it in?
 1. How do you generate summary statistics?
-
-
-# Naming files and directories
-## Logical naming
-
-> the logical structure of your final set of experiments may look drastically
-> different from the form you initially designed. This is particularly true
-> under the results directory, where you may not even know in advance what
-> kinds of experiments you will need to perform. <mark>If you try to give your
-> directories logical names, you may end up with a very long list of
-> directories with names that, six months from now, you no longer know how to
-> interpret.</mark> (Noble, 2009)
-
-# Naming files and directories
-## Logical naming
-
-*Keep it simple (and obvious).*
-
-- `sequences`
-- `counts` or `read-counts`
-- `survey-responses`
-
-# Naming files and directories
-## Sequential naming
-
-- datetime: `YYYY-MM-DD`, `YYYY-MM-DD-HHMMSS`
-- Unix timestamp: `ddddddddd`
-- alphanumeric: `001`, `a`
-
-Optionally include a brief (1-3 words) description as a suffix.
-
 
 <!-- END -->

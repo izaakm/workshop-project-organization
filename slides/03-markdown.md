@@ -178,16 +178,8 @@ What it looks like:
 
 
 # Exercise
-## Add Markdown based formatting to your README
 
-...
-
-
-
-
-
-
-
+1. Add Markdown formatting to your README
 
 
 
