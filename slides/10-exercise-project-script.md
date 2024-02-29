@@ -126,6 +126,10 @@ EOF
 
 The **heredoc** `<<EOF` tells `cat` to "read lines of text `...` until you see the line `EOF`."
 
+<div class="footnote">
+Within the heredoc, Bash will interpret variables (`$foo`) and evaluate
+subshells (`` `echo $foo` ``) so avoid using backticks inside a heredoc.
+</div>
 
 # Exercise
 
@@ -203,12 +207,12 @@ Description of your project.
 ## Project structure
 
     ${project_dir}
-    ├── README.md
-    ├── data       => Immutable data
-    ├── docs       => Documentation of this project
-    ├── notebooks  => Notebooks (e.g., Jupyter, R Markdown)
-    ├── results    => Tables, figures, etc.
-    └── src        => Source code
+    |- README.md
+    |- data       => Immutable data
+    |- docs       => Documentation of this project
+    |- notebooks  => Notebooks (e.g., Jupyter, R Markdown)
+    |- results    => Tables, figures, etc.
+    |- src        => Source code
 
 
 <!-- END OF README -->

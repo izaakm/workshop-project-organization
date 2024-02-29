@@ -2,9 +2,9 @@
 title: Example Project
 ---
 
-# Project structure
+# A "standard" project template
 
-<!-- blank slide -->
+![](https://imgs.xkcd.com/comics/standards.png)
 
 # A minimal example
 

@@ -2,9 +2,20 @@
 title: README Files
 ---
 
-# README Files
+# Documentation
 
 <!-- blank slide -->
+
+# Documentation
+
+Your README file ...
+
+- is a form of documentation that provides a general overview of the package.
+- is the first thing other developers will look at.
+- should be a plain text file.
+- may be writting with Markdown formatting (README.md).
+
+~ <https://en.wikipedia.org/wiki/README>
 
 # README.md
 ## Markdown
@@ -40,10 +51,55 @@ Simple, text-based formatting instructions (**markup**).
 <table>
 <tr>
 <td>
-TODO: screenshot repo before
+![](images/readme-terminal/main.png)
 </td>
 <td>
-TODO: screenshot repo after
+![](images/readme-github/main.png)
+</td>
+</tr>
+</table>
+
+# Why use Markdown?
+
+<table>
+<tr>
+<td>
+<div style="font-size: 0.6em">
+```
+Simple CompBio Project
+======================
+
+A script for creating computational biology projects.
+
+What does this script do?
+
+1. Create a new project directory (name provided by the user).
+1. Create files and subdirectories in that directory.
+1. Initialize that directory as a Git repository.
+
+Project Structure
+-----------------
+
+The `new-project.sh` script creates a new project directory with the following
+structure:
+
+    example
+    ├── CITATION.cff
+    ├── README.md
+    ├── bin
+    ├── data
+    │   ├── anthro
+    │   ├── derived
+    │   └── raw
+    ├── docs
+    ├── notebooks
+    ├── results
+    └── src
+```
+</div>
+</td>
+<td>
+![](images/readme-github/main.png)
 </td>
 </tr>
 </table>

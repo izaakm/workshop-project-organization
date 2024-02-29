@@ -4,9 +4,7 @@ zuid: 65c7bed4
 title: Outline
 ---
 
-# Project Organization & Data Management
-
-<!-- blank -->
+<!-- TITLE SLIDE IS AUTO-GENERATED FROM METADATA -->
 
 
 # Plugs
@@ -27,6 +25,10 @@ title: Outline
 
 [img-workshop-flyer]: images/workshop-flyer/flyer-150dpi.jpg
 
+
+# Project Organization & Data Management
+
+<!-- blank -->
 
 # Motivation
 
@@ -105,19 +107,12 @@ title: Outline
 
 # Outline
 
-1. What should you keep in your project directory?
-1. Project Directory structure (example)
-1. README files and markdown
-1. Git
-1. data directory
-1. src directory
-1. docs directory
-1. Exercise: conceptual model of your project, data flow
-1. Exercise: clean up a spreasheet
-1. Exercise: create a project directory
-1. Exercise: create a script to automate setup
-1. Exercise: create a project template on github
-1. Cookiecutter
+1. What do you need to track?
+1. Standard project structure(s)
+1. Documentation
+1. Alternative project structure(s)
+1. Create a "make-project" script
+1. Extras
 
 
 <!-- END -->
