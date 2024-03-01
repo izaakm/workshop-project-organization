@@ -62,7 +62,7 @@ This is the description of my example project.
 1. Create an `AUTHORS` file and list the authors for the project
 1. Optional: Initialize your project directory as a Git repository
 
-# Top-level directories
+# Directories
 
 ```
 ...
@@ -73,35 +73,33 @@ This is the description of my example project.
 └── src
 ```
 
-# Top-level directories
+# Directories
 ## `data`
 
 - Data is immutable.
 - Data is *not* tracked with version control
 
-# Top-level directories
+# Directories
 ## `docs`
 
-Your lab notebook
-
-> ... to make the results more understandable, significant effort may need to
-> go into the prose descriptions of experiments in the lab notebook, rather
-> than simply including a figure or table with a few lines of text summarizing
-> the major conclusion. (Noble, 2009)
-
-# Top-level directories
-## `docs`
-
-Your lab notebook
-
-- Detailed documentation that explain this project.
+- Detailed documentation that explains your project.
 - Most programming languages have packages for building docs automatically from
   code.
 - For small projects, all documentation might reasonably fit into the main
   `README` file.
 - aka: `doc`, `documentation`
 
-# Top-level directories
+# Directories
+## `docs`
+
+Or, as your lab notebook:
+
+> ... to make the results more understandable, significant effort may need to
+> go into the prose descriptions of experiments in the lab notebook, rather
+> than simply including a figure or table with a few lines of text summarizing
+> the major conclusion. (Noble, 2009)
+
+# Directories
 ## `notebooks`
 
 Notebooks (Jupyter, R markdown) are for exploration and communication.
@@ -112,7 +110,7 @@ Notebooks (Jupyter, R markdown) are for exploration and communication.
 
 <!-- [TODO] Does it make sense to think of this as a 'lab notebook'? -->
 
-# Top-level directories
+# Directories
 ## `results`
 
 - As in the *results* section of your manuscript.
@@ -121,9 +119,9 @@ Notebooks (Jupyter, R markdown) are for exploration and communication.
 - Your code/pipeline may save files in this directory, but it should NEVER read
   files from this directory. IE, this is a *terminal* directory with respect to
   your analysis.
-- aka `reports`
+- aka `reports`, `figures`, `manuscript`
 
-# Top-level directories
+# Directories
 ## `src`
 
 - As in your original *source code* (including scripts) for your analysis.
@@ -190,8 +188,9 @@ Logical naming examples:
 
 > *There should be one--and preferably only one--obvious <!--way to do it--> place to find it.*
 > 
-> \~ Adapted from *The Zen of Python*
+> \~ Adapted from [*The Zen of Python*][zen]
 
+[zen]: https://peps.python.org/pep-0020/
 
 # Data (Sub)Sub-directories
 
@@ -209,7 +208,12 @@ Sequential naming
 
 - alpha/numeric: `01`, `010`, `a`
 - datetime: `YYYY-MM-DD`, `YYYY-MM-DD-HHMMSS`
-- Unix timestamp: `1234567890`
+- Unix time: `1234567890`
+
+<!--
+[TODO] Include a table with examples of how to generate these in bash,
+Python, R.
+-->
 
 # Data (Sub)Sub-directories
 
@@ -217,13 +221,13 @@ Sequential naming
 
 alpha/numeric: `01`, `010`, `a`
 
-- `pipeline/001`<br/>
-  `pipeline/002`
+- `pipeline/010`<br/>
+  `pipeline/020`
 
 Optionally include a brief (1-3 words) description as a suffix
 
-- `pipeline/001-fastqc`<br/>
-  `pipeline/002-multiqc`
+- `pipeline/010-fastqc`<br/>
+  `pipeline/020-multiqc`
 
 # Data (Sub)Sub-directories
 
@@ -233,22 +237,35 @@ datetime: `YYYY-MM-DD`, `YYYY-MM-DD-HHMMSS`
 
 - `raw/survey-responses/2024-03-01`
 - `anthro/milleri/2024-03-01`
+- Also good for notebooks: `notebooks/240301-explore-counts.ipynb`
 
 # Data (Sub)Sub-directories
 
 Sequential naming
 
-Unix timestamp: `1234567890`
+Unix time: `1234567890`
 
 - `pipeline/1709214775`<br/>
   `pipeline/1709214779`
 - `tmp/differential-expression/1709214775`<br/>
   `tmp/differential-expression/1709214779`
 
-# Adding 'empty' directories to a Git repo
+# Data Sub-directories
+## Adding 'empty' directories to a Git repo
+
+```
+data/
+├── anthro
+├── derived
+└── raw
+```
 
 Git only tracks *files*. A common convention is to create empty files named
 `.gitkeep` in standard directories.
+
+```
+$ touch data/raw/.gitkeep
+```
 
 # Exercise
 

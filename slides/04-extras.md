@@ -79,7 +79,7 @@ date-released: 1953-04-25
 
 
 # Files
-## Add a DOI w/ Zenodo
+## Register a DOI for software w/ Zenodo
 
 ```
 $ cat CITATION.cff

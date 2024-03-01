@@ -14,8 +14,7 @@ title: Getting Started
 - Data (raw, processed, etc)
 - Scripts
 - Lab protocols
-- Primary data, including images 
-- Lists of specimens and reagents 
+- Lists of samples, reagents 
 - Information about instruments
 - ...
 
@@ -34,10 +33,9 @@ Start with a flowchart or conceptual model
 ## Principles
 
 - Data is immutable
-- Documentation (README)
+- Document your project (README)
 - Use version control, eg, Git
-- Be obvious
-- Be explicit
+    - but *not* for data
 - Notebooks (Jupyter, R markdown) are for exploration and communication
 - Reproducibility includes your code and all of its dependencies
 
@@ -79,4 +77,5 @@ https://hbctraining.github.io/rnaseq-cb321/lessons/analysis_methods.html
 -->
 
 # *Let's get started ...*
+
 <!-- END -->

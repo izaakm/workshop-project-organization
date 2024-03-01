@@ -17,7 +17,7 @@ title: Outline
 
 # <!-- SLIDE: FLYER -->
 
-<img src="images/workshop-flyer/flyer-150dpi.jpg" style="border: 1px solid grey" />
+<img src="images/workshop-flyer/main.jpg" style="border: 1px solid grey" class="shadow" />
 
 <!--
 ![][img-workshop-flyer]
@@ -57,7 +57,7 @@ title: Outline
 # Motivation
 
 <div style="font-size: 0.8em;">
-> Ever tried to reproduce an analysis that you did a few months ago (or years)
+> Ever tried to reproduce an analysis that you did a few months (or years)
 > ago? You wrote the code, but now you can't remember if you should use
 > `make_figures_final.R`, `make_figures_working.R` or `new_make_figures.R`.
 > 
@@ -70,23 +70,27 @@ title: Outline
 >   was it "process-data" or "clean-data"?
 > - Where did the shapefiles get downloaded from for the geographic plots?
 > - Etc., times infinity.
+>
+> ~ Cookiecutter Data Science
+>
+> <p><!-- fake "p:last-child" for reveal.js --></p>
 </div>
 
-~ Cookiecutter Data Science
 
 # Project Organization & Data Management
 
-## Objectives
+Objectives
 
-- identify day-to-day organizational challenges associated with computational experiments
-- suggest strategies for managing computational experiments
+- Explore day-to-day organizational challenges associated with computational experiments.
+- Suggest strategies for managing computational experiments.
 
-## Outcome
+Outcome
 
-- develop a logical, reasonably standardized, but flexible project structure
+- Develop a logical, reasonably standardized, but flexible project structure.
 
 # Project Organization & Data Management
-## Benefits
+
+Benefits
 
 - A newcomer can begin to understand your project without digging in to extensive documentation.
 - A newcomer doesn't have to read 100% of the code to know where to look for specific things.
@@ -109,7 +113,7 @@ title: Outline
 
 1. What do you need to track?
 1. Standard project structure(s)
-1. Documentation
+1. Project documentation
 1. Alternative project structure(s)
 1. Create a "make-project" script
 1. Extras

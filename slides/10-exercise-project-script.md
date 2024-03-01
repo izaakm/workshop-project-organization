@@ -128,7 +128,7 @@ The **heredoc** `<<EOF` tells `cat` to "read lines of text `...` until you see t
 
 <div class="footnote">
 Within the heredoc, Bash will interpret variables (`$foo`) and evaluate
-subshells (`` `echo $foo` ``) so avoid using backticks inside a heredoc.
+commands (`` `echo $foo` ``) so avoid using backticks inside a heredoc.
 </div>
 
 # Exercise
@@ -252,8 +252,8 @@ Then exit Nano by pressing <kbd>Control</kbd><kbd>x</kbd>.
 ```
 $ ls
 make-project.sh
-$ bash ./make-project.sh /lustre/isaac/scratch/projects/foo
-$ ls -R /lustre/isaac/scratch/projects/foo
+$ bash ./make-project.sh /lustre/isaac/scratch/USERNAME/projects/foo
+$ ls -R /lustre/isaac/scratch/USERNAME/projects/foo
 ```
 
 # Exercise
@@ -288,5 +288,16 @@ alias mkprj="bash ~/bin/make-project.sh"
 
 Then exit nano with <kbd>Control</kbd><kbd>o</kbd>, <kbd>Control</kbd><kbd>x</kbd>
 
+# Exercise 
+## Test your alias
+
+```
+$ cd
+$ source .bashrc
+$ alias mkprj
+mkprj='bash ~/bin/make-project.sh'
+$ cd /lustre/isaac/scratch/USERNAME/projects
+$ mkprj future-nature-pub
+```
 
 <!-- END -->
