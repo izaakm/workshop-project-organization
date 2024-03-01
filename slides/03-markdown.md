@@ -61,6 +61,16 @@ Simple, text-based formatting instructions (**markup**).
 
 # Why use Markdown?
 
+![](images/readme-terminal/main.png)
+
+
+# Why use Markdown?
+
+![](images/readme-github/main.png)
+
+
+# Why use Markdown?
+
 - Easy to read in **plain-text** (e.g., in the terminal).
 - Nice to read online ... and more.
     <div class="footnote"> these slides are written in Markdown </div>
