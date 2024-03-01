@@ -1,13 +1,17 @@
 Project Organization and Data Management
 ========================================
 
+The goal of this workshop is to:
+
+- address day-to-day organization challenges associated with computational projects
+- propose a reasonable strategy for organizing computational projects
+
+This workshop pulls heavily from the ideas presented by Noble (2009).
+
 > Unfortunately, for students who are preparing for a research career, [the
 > typical bioinformatics and computational biology] curriculum fails to address
 > many of the **day-to-day organizational challenges** associated with
-> performing computational experiments. In practice, the principles behind
-> organizing and documenting computational experiments are often learned on the
-> fly, and this learning is strongly influenced by personal predilections as
-> well as by chance interactions with collaborators or colleagues.
+> performing computational experiments....
 >
 > The purpose of [this workshop!] is to describe one good strategy for carrying
 > out computational experiments. I will not describe profound issues such as
@@ -19,78 +23,30 @@ Project Organization and Data Management
 > (Noble, 2009)
 
 
-Based on:
-
-- [Project Organization and Management for Genomics][_d]
-- [Cookiecutter Data Science][_g]
-- [A Quick Guide to Organizing Computational Biology Projects][_i]
-
 
 Topics
-=======
+-------
 
-1. What do you want your project directory to store?
-    - Lab protocols
-    - Primary data, including images 
-    - Lists of specimens and reagents 
-    - Information about instruments
-    - data
-    - code
-    - documentation
-    - tests
-1. Conceptual model of your project
-    - Where do things go? ... GTD Archive - Use the most obvious "identifier",
-      eg, you should be able to find it by looking in at most 2 places.
-1. README
-1. Project Directory structure
-    - an example project directory
-    - talk about the files and directories ...
-        - README.md
-        - .git
-        - data
-        - code (src)
-        - documentation (docs)
-        - tests
-1. Data categories
-    - metadata (data about the experiment; machine or human generated, immutable)
-    - raw data (machine generated, immutable)
-    - third-party (human generated, immutable)
-    - derived (outputs)
-    - data dictionaries
-1. Data best practices
-    - machine generated vs human generated (eg, Excel spreadsheets)
-    - naming conventions: unique identifiers for samples
-        - see "making-the-right-moves-second-edition.pdf" p 149 for examples
-    - unique identifiers for samples
-    - about spreadsheets
-1. Example: Genomics Core Sequencing data
-1. Example: NCBI SRA Data
-1. Example: Something more stats/data-science oriented
-
-Test diagram
-============
-
-```mermaid
-flowchart LR
-
-A[Hard] -->|Text| B(Round)
-B --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-```
+1. [Overview](slides/00-intro.md)
+1. [Getting started](slides/01-getting-started.md)
+1. [A simple example](slides/02-simple-example.md)
+1. [Documenting your project](slides/03-markdown.md)
+1. [Adding complexity](slides/04-extras.md)
+1. [Automate it](slides/10-exercise-project-script.md)
+1. [Extra features](slides/15-cookiecutter.md)
 
 
+Acknowledgements
+----------------
 
-Attribution
-===========
-
-Portions of this workshop are derived from the [Data Carpentries'][_c]
-workshop "[Project Organization and Management for Genomics][_d]"
-(Copyright (c) The Carpentries) which is made available under the [Creative
-Commons Attribution license 4.0][_a].
+- [A Quick Guide to Organizing Computational Biology Projects][_i]
+- [Cookiecutter Data Science][_g]
+- [Data Carpentries'][_c] workshop "[Project Organization and Management for
+  Genomics][_d]" (Copyright (c) The Carpentries) which is made available under
+  the [Creative Commons Attribution license 4.0][_a].
 
 References
-==========
+----------
 
 1. Noble WS (2009) A Quick Guide to Organizing Computational Biology Projects. PLOS Computational Biology 5(7): e1000424. https://doi.org/10.1371/journal.pcbi.1000424
 
