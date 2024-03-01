@@ -1,5 +1,5 @@
 ---
-title: Example Project
+title: More project features
 ---
 
 

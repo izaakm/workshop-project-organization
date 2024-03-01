@@ -1,5 +1,5 @@
 ---
-title: Extras
+title: Extra features
 ---
 
 # Extras
