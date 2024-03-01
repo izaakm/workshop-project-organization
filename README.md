@@ -27,13 +27,13 @@ This workshop pulls heavily from the ideas presented by Noble (2009).
 Topics
 -------
 
-1. [Overview](slides/00-intro.md)
+1. [Overview](slides/00-preliminaries.md)
 1. [Getting started](slides/01-getting-started.md)
-1. [A simple example](slides/02-simple-example.md)
-1. [Documenting your project](slides/03-markdown.md)
-1. [Adding complexity](slides/04-extras.md)
+1. [A simple example](slides/02-example-project.md)
+1. [Documenting your project](slides/03-documentation.md)
+1. [Adding complexity](slides/04-example-project.md)
 1. [Automate it](slides/10-exercise-project-script.md)
-1. [Extra features](slides/15-cookiecutter.md)
+1. [Extra features](slides/15-extra-features.md)
 
 
 Acknowledgements
