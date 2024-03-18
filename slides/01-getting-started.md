@@ -20,13 +20,25 @@ title: Getting Started
 
 # Getting Started
 
-Start with a flowchart or conceptual model
+Start with a flowchart or conceptual model.
 
-- Start from an example online ...
+Start from [an example online][metagenomics] ...
 
-    <img src="https://astrobiomike.github.io/images/metagenomics_overview.png" style="max-height: 10em; border: 1px solid black;" />
+<img src="https://astrobiomike.github.io/images/metagenomics_overview.png" style="max-height: 10em; border: 1px solid black;" />
 
-    ... But it doesn't have to be that complicated!
+... But it doesn't have to be that complicated!
+
+<!--
+<a href="https://astrobiomike.github.io/genomics/">
+<img src="https://astrobiomike.github.io/images/metagenomics_overview.png" style="max-height: 10em; border: 1px solid black;" />
+</a>
+-->
+
+<div class="footnote">
+<https://astrobiomike.github.io/genomics/>
+</div>
+
+[metagenomics]: https://astrobiomike.github.io/genomics/
 
 # Getting Started
 ## Principles
@@ -67,7 +79,6 @@ flowchart TD
 
 # Exercise
 ## Conceptual model -- Example
-
 
 <img src="images/example-workflow.png" />
 
